@@ -1,7 +1,16 @@
 const router = require('express').Router()
 
+
+
 router.get('/new', (req, res) => {
   res.render('places/new')
+ 
+  router.post('/', (req, res) => {
+    console.log(req.body)
+    res.send('POST /places')
+  })
+ 
+ 
 
 // GET /places
  
@@ -19,11 +28,13 @@ router.get('/new', (req, res) => {
         pic: 'http://placekitten.com/250/250'
       }]
       
+      
     res.render('places/index', {places})
     
   })
   
-
+  
+  
 
 module.exports = router
 
