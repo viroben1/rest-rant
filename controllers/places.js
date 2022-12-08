@@ -61,10 +61,10 @@ router.put('/:id', (req, res) => {
   res.send('PUT /places/:id stub')
 })
 
-      // Save the new data into places[id]
-      places[id] = req.body
-      res.redirect(`/places/${id}`)
-      res.render('places/edit')
+      // // Save the new data into places[id]
+      //  places[id] = req.body
+      // res.redirect(`/places/${id}`)
+      // res.render('places/edit')
   
 
 
