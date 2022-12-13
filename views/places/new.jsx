@@ -33,6 +33,15 @@ function new_form () {
   <label for="founded">Founded Year</label>
   <input type={"number"} className="form-control" id="founded" name="founded" value={new Date().getFullYear()}/>
 </div>
+{/* let sumRatings = data.place.comments.reduce((tot, c) => {
+  return tot + c.stars
+}, 0) */}
+let averageRating = sumRatings / data.place.comments.length
+rating = (
+  <h3>
+  {Math.round(averageRating)} stars
+  </h3>
+)
 
  </main>
 </Def>

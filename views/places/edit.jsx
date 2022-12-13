@@ -4,7 +4,7 @@ const Def = require('../default.jsx')
 function edit_form (data) {
     return (
         <Def>
-          ...
+          
           <form method="POST" action={`/places/${data.place.id}?_method=PUT`}>
   <div className="row">
       <div className="form-group col-sm-6">
@@ -17,7 +17,7 @@ function edit_form (data) {
       </div>
   </div>
 
-  ...
+  
 </form>
 
 
