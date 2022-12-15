@@ -2,6 +2,8 @@ const router = require('express').Router()
 const places = require('../models/places.js')
 const db = require('../models')
 const { populate } = require('../models/comment.js')
+const placesSeedData= require ('../seeders/seed-places')
+
 router.get('/new', (req, res) => {
   res.render('places/new')
 })
